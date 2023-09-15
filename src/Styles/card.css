@@ -1,0 +1,151 @@
+.logement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.ficheLogement {
+    display: flex;
+    margin-top: 30px;
+}
+
+.ficheLogement h4 {
+    color: var(--colorRed);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.ficheLogement h1 {
+    color: var(--colorRed);
+    margin: 0;
+    font-size: 36px;
+}
+
+.div-tags {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    padding-bottom: 2px;
+    height: 25px;
+    font-size: 14px;
+    background-color: var(--colorRed);
+    color: white;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.div-etoiles {
+    display: flex;
+    gap: 10px;
+    color: var(--colorRed);
+    width: 167px;
+}
+
+.div-etoiles p {
+    display: flex;
+    text-align: right;
+    font-size: 18px;
+    align-items: center;
+    margin: 0;
+}
+
+.div-etoiles img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.div-description {
+    width: 100%;
+}
+
+.stars {
+    display: flex;
+    font-size: 30px;
+    width: 130px;
+    gap: 10px;
+    }
+
+.span1 {
+    color: var(--colorRed);
+}
+
+.span2 {
+    color: #E3E3E3;
+}
+
+.collapseLogement {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.bloc-stars {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.stars {
+    gap: 3px;
+}
+
+
+
+/** média query */
+
+@media (max-width: 768px) {
+    .compteurImages { 
+        display: none; 
+    }
+    .ficheLogement, .collapseLogement { 
+        display: block; 
+    }
+    .div-description { margin-bottom: 20px; }
+    .bloc-stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .stars {
+        align-items: center;
+        justify-content: left;
+    }
+    .tags { 
+        font-size: 10px; 
+    }
+    .collapseLogement {
+        margin-bottom: 30px;
+    }
+
+    .ficheLogement h1, .ficheLogement h4 {
+        font-weight: 500;
+    }
+
+    .ficheLogement h1 {
+        font-size: 18px;
+    }
+
+    .ficheLogement h4 {
+        font-size: 14px;
+    }
+
+    .div-etoiles p {
+        font-size: 12px;
+    }
+}
+
+
+
