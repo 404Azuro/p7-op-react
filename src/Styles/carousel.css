@@ -58,13 +58,17 @@
         height: 255px; 
     }
     .classChevronGauche { 
-        height: 30px; 
+        height: 24px;
+        left: 20px;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
     }
     .classChevronDroit {
-        height: 30px;
-        left: calc(100% - 20px)
-    }
-    .carousel p { 
-        top: 70% 
+        height: 24px;
+        left: calc(100% - 20px);
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
     }
 }

@@ -45,10 +45,9 @@
     }
     .banner-home, .banner-about {
         margin-top: 0px;
-        background-position: left;
     }
     .banner-about, .banner-home, .banner-container { 
-        border-radius: 25px; 
+        border-radius: 10px;
     }
 
     .banner-home.banner-container {
